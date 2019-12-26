@@ -1,0 +1,23 @@
+create table visitors (
+id integer primary key,
+name varchar(50) not null,
+date_of_birth varchar(15),
+gender varchar(10)
+);
+
+create table visits (
+id integer primary key,
+name varchar(50)not null,
+time integer,
+coach integer not null
+);
+
+select * from visitors;
+insert into visitors(id,name,date_of_birth,gender)
+values(1,'Katrine','30.01.03','female')
+values(2,'Horman','20.11.10','male')
+
+select * from visits ;
+insert into visits(id,name,time,coach);
+values (1,'Liza','15:00 pm','Petr')
+values (2,'Zina','12:00 pm','Norman')
